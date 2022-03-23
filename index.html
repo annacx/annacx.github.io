@@ -16,15 +16,42 @@
 			body {
 				background-color: ghostwhite;
 			}
+			button {
+				background-color: Crimson;
+				border: none;
+				color: white;
+				padding: 15px 32px;
+				text-align: center;
+				border-radius: 8px;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 16px;
+}
+button:hover{ background-color: 	#FC355C	;}
 		</style>
-		<link rel="icon" href="https://i.imgur.com/DIu1pDv.png">
+		<link rel="icon" href="https://i.imgur.com/Ndvk78a.png">
 	</head>
 	<body>
 		<header>
 			<h1>Welcome to anna.cx :)</h1>
 		</header>
-		<article>
-			<p>there is currently nothing here, if you check back later there might be something.</p>
+		<article id="article1">
+			<p>there is currently a button here, if you check back later there might be something more.</p>
+				<button type="button" id="button1" onmousedown="changeColor()" onmouseup="changeColorAgain()" onmouseenter="changeColorAgain()" onmouseleave="changeColorBackAgain()">this button does nothing</button>
 		</article>
+		 <script>
+      function changeColor() {
+        document.getElementById('button1').style.backgroundColor = '#CC042C';
+      }
+	        function changeColorBack() {
+        document.getElementById('button1').style.backgroundColor = '#FC355C';
+      }
+	  	        function changeColorAgain() {
+        document.getElementById('button1').style.backgroundColor = '#FC355C';
+      }
+	  	        function changeColorBackAgain() {
+        document.getElementById('button1').style.backgroundColor = 'Crimson';
+      }
+    </script>
 	</body>
 </html>
