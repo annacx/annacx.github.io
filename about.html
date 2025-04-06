@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>anna.cx</title>
+		<title>anna.cx >> about</title>
 		<style>
 			header {
 				padding: 7px;
@@ -15,8 +15,8 @@
 			}
 			body {
 				background-color: ghostwhite;
-			}
-			button {
+				}
+				button {
 				background-color: Crimson;
 				border: none;
 				color: white;
@@ -28,19 +28,23 @@
 				font-size: 16px;
 }
 button:hover{ background-color: 	#FC355C	;}
-		</style>
-		<link rel="icon" href="a.png">
+p {
+  text-align: left;
+}
+	</style>
+	<link rel="icon" href="a.png">
 	</head>
 	<body>
+	<button type="button" id="button1" onclick="window.location.href='index.html';" onmousedown="changeColor()" onmouseup="changeColorAgain()" onmouseenter="changeColorAgain()" onmouseleave="changeColorBackAgain()">back to main</button>
+		<article id="article2">
 		<header>
-			<h1>welcome to anna.cx :)</h1>
+			<h1>about</h1>
 		</header>
-		<article id="article1">
-			<p>there is currently a button here, if you check back later there might be something more.</p>
-				<button type="button" id="button1" onclick="window.location.href='about.html';" onmousedown="changeColor()" onmouseup="changeColorAgain()" onmouseenter="changeColorAgain()" onmouseleave="changeColorBackAgain()">about me</button>
-		<!-- <button type="button" id="button1" onclick="window.location.href='test.html';" onmousedown="changeColor()" onmouseup="changeColorAgain()" onmouseenter="changeColorAgain()" onmouseleave="changeColorBackAgain()">test button</button> -->
-		</article>
-		 <script>
+		<p>hello. i am anna (stylized in lowercase, please spell my name like this). i am a transgender woman from the state of washington</p>
+		<p> when i'm not working on something i like to play video games (shocker, i know) i really enjoy stardew valley! and cyberpunk :)</p>
+		<p> i also like to collect lego sets, particularly the modular building ones (one day i <b>will</b> own all of them, mark my words)
+		
+	<script>
       function changeColor() {
         document.getElementById('button1').style.backgroundColor = '#CC042C';
       }
@@ -51,5 +55,6 @@ button:hover{ background-color: 	#FC355C	;}
         document.getElementById('button1').style.backgroundColor = 'Crimson';
       }
     </script>
-	</body>
-</html>
+`	</body>
+	</html>
+			
